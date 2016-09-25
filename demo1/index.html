@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>豆瓣电影</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- nav of start -->
+	<div id="global-nav">
+		<div class="nav">
+			<div class="item-nav">
+				<ul>
+					<li><a href="#">豆瓣</a></li>
+					<li><a href="#">读书</a></li>
+					<li><a href="#">电影</a></li>
+					<li><a href="#">音乐</a></li>
+					<li><a href="#">同城</a></li>
+					<li><a href="#">小组</a></li>
+					<li><a href="#">阅读</a></li>
+					<li><a href="#">FM</a></li>
+					<li><a href="#">东西</a></li>
+					<li><a href="#">集市</a></li>
+					<li><a href="#">更多</a></li>
+				</ul>
+			</div>
+			<div class="info-nav">
+				<a href="#">下载豆瓣客户端</a>
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+			</div>
+		</div>
+		<div class="logo-search">
+			<div class="public-container">
+				<div class="nav-logo"></div>
+				<div class="nav-search">
+					<form name="form" method="get" action="">
+						<input  type="text" name="search" placeholder="电影、影人、影院、电视剧" name="searchBox" class="searchBox">
+						<input type="submit" name="searchBtn" value="搜索" class="searchBtn">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="sub-nav public-container">
+			<ul>
+				<li><a href="#">影讯&电影</a></li>
+				<li><a href="#">选电影</a></li>
+				<li><a href="#">电视剧</a></li>
+				<li><a href="#">排行榜</a></li>
+				<li><a href="#">分类</a></li>
+				<li><a href="#">影评</a></li>
+				<li><a href="#">2015年度榜单</a></li>
+				<li><a href="#">豆瓣观影报告</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- nav of end -->
+	<div  id="content" class="public-container">
+		<div class="col-7">
+			<div class="hotshow">
+				<div class="hotshow-hd">
+					<h2>正在热映
+						<span><a href="#">全部正在热映»</a></span>
+						<span><a href="#">即将上映»</a></span>
+					</h2>
+					<div class="slide-control">
+						<span class="prev-btn"><a href=""></a></span>
+						<span class="next-btn"><a href=""></a></span>
+					</div>
+					<div class="slide-tip">
+						<span class="silde-index">1</span>/
+						<span class="silde-max">6</span>
+					</div>
+				</div>
+				<div class="hotshow-content">
+					<ul class="list">
+						<li class="item">
+							<a href="#"><img src="images/1.jpg"></a>
+							<h3 class="name">大话西游3</h3>
+							<div class="score">
+								<span class="star star1"></span>4.7
+							</div>
+							<input  class="buyBtn" type="button" name="buy" value="选座购票" >
+						</li>
+							<li class="item">
+							<a href="#"><img src="images/3.jpg"></a>
+							<h3 class="name">长江图</h3>
+							<div class="score">
+								<span class="star star1"></span>4.7
+							</div>
+							<input  class="buyBtn" type="button" name="buy" value="选座购票" >
+						</li>
+							<li class="item">
+							<a href="#"><img src="images/4.jpg"></a>
+							<h3 class="name">微微一笑很倾城</h3>
+							<div class="score">
+								<span class="star star1"></span>4.7
+							</div>
+							<input  class="buyBtn" type="button" name="buy" value="选座购票" >
+						</li>
+							<li class="item">
+							<a href="#"><img src="images/2.jpg"></a>
+							<h3 class="name">鲨鱼</h3>
+							<div class="score">
+								<span class="star star1"></span>4.7
+							</div>
+							<input  class="buyBtn" type="button" name="buy" value="选座购票" >
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class="selectmovie">
+				<div class="selectmovie-hd">
+					<h2>选电影<span>/</span><span><a href="#">选电视剧</a></span></h2>
+				</div>
+				<div class="filter">
+					<div class="tags-list">
+						<a class="item" href="#">热门</a>
+						<a class="item" href="#">最新</a>
+						<a class="item activate" href="#">经典</a>
+						<a class="item" href="#">可播放</a>
+						<a class="item" href="#">豆瓣高分</a>
+						<a class="item" href="#">冷门佳片</a>
+						<a class="item" href="#">华语</a>
+						<a class="item" href="#">欧美</a>
+						<a class="item" href="#">韩国</a>
+						<a class="item" href="#">日本</a>
+						<a class="item" href="#">动作</a>
+						<a class="item" href="#">喜剧</a>
+						<a class="item" href="#">爱情</a>
+						<a class="item" href="#">科幻</a>
+						<a class="item" href="#">悬疑</a>
+						<a class="item" href="#">恐怖</a>
+						<a class="item" href="#">成长</a>
+					</div>
+					<div class="tool">
+						<div class="sort">
+							<label>
+								<input type="radio" name="sort">
+							按热度排序
+							</label>
+							<label>
+								<input type="radio" name="sort"
+							按时间排序
+							</label>
+							<label>
+								<input type="radio" name="sort">
+							按评价排序
+							</label>
+						</div>
+						<div class="check">
+							<label>
+								<input type="checkbox" name="sort">
+							我没看过的
+							</label>
+							<label>
+								<input type="checkbox" name="sort">
+							可在线播放
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="selectmovie-content">
+					<ul class="list">
+						<li class="item">
+							<a href="#"><img src="images/5.jpg"></a>
+							<h3><a href="#">肖生克的救赎</a><strong>9.6</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/7.jpg"></a>
+							<h3><a href="#">这个杀手不太冷</a><strong>9.4</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/6.jpg"></a>
+							<h3><a href="#">霸王别姬</a><strong>9.5</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/8.jpg"></a>
+							<h3><a href="#">阿甘正传</a><strong>9.4</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/9.jpg"></a>
+							<h3><a href="#">盗梦空间</a><strong>9.2</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/10.jpg"></a>
+							<h3><a href="#">千与千寻</a><strong>9.2</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/11.jpg"></a>
+							<h3><a href="#">美丽人生</a><strong>9.5</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/12.jpg"></a>
+							<h3><a href="#">三傻大闹宝莱坞</a><strong>9.1</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/13.jpg"></a>
+							<h3><a href="#">泰坦尼克号</a><strong>9.1</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/14.jpg"></a>
+							<h3><a href="#">忠犬八公的故事</a><strong>9.2</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/15.jpg"></a>
+							<h3><a href="#">少年派奇幻漂流</a><strong>9.0</strong></h3>
+						</li>
+						<li class="item">
+							<a href="#"><img src="images/16.jpg"></a>
+							<h3><a href="#">大话西游之大圣娶亲</a><strong>9.1</strong></h3>
+						</li>
+					</ul>
+					<a class="morebtn" href="">加载更多</a>
+				</div>
+			</div>
+			<div class="recommend">
+				<div class="recommend-hd">
+					<h2>热门推荐</h2>
+					<div class="slide-control">
+						<span class="prev-btn"><a href=""></a></span>
+						<span class="next-btn"><a href=""></a></span>
+					</div>
+					<div class="slide-tip">
+						<span class="silde-index">1</span>/
+						<span class="silde-max">6</span>
+					</div>
+				</div>
+				<div class="recommend-container">
+					<a href="#"><img src="images/17.jpg"></a>
+					<div class="gallery-detail">
+						<div class="gallery-hd">
+							<a href="#">直视这个不那么完美的人间</a>
+						</div>
+						<div class="gallery-bd">当观众目力所及之处被大同小异的真人秀霸屏，一部在上海新闻综合频道播出的医疗纪录片《人间世》却在网络上悄悄走红
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews">
+				<div class="reviews-hd">
+					<h2>最受欢迎的影评 <span><a href="#">更过热门评论»</a></span><span><a href="#">新片影评»</a></span></h2>
+				</div>
+				<div class="reviews-container">
+					<a class="pic" href="#"><img src="images/18.jpg"></a>
+					<div class="reviews-info">
+						<h3><a href="">从你的全世界路过，让我留在你身边。</a></h3>
+						<div class="reviews-meta">
+							<a href="#">inna99</a>评论<a href="#">《从你的全世界路过》</a><span class="star star1"></span>
+						</div>
+						<div class="reviews-content">
+                我希望有个如你一般的人。 如这山间清晨一般明亮清爽的人， 如奔赴古城道路上阳光一般的人， 温暖而不炙热，覆盖我所有肌肤。 由起点到夜晚，由山野到书房， 一切问题的答案都很简单。  我希望有个如你一般的人，贯彻未来，数......<span>(全文)</span>
+						</div>
+					</div>
+				</div>
+				<div class="reviews-container">
+					<a class="pic" href="#"><img src="images/19.jpg"></a>
+					<div class="reviews-info">
+						<h3><a href="">太阳所能照到的地方，都是我们的国土</a></h3>
+						<div class="reviews-meta">
+							<a href="#">电影那件小事</a>评论<a href="#">《狮子王》</a><span class="star star1"></span>
+						</div>
+						<div class="reviews-content">
+                              “太阳所能照到的地方，都是我们的国土”  最近重温这部片子，不得不说真的是简单的王子复仇记，很像动画版的哈姆莱特，却深刻让人无法忘记，那些关于成长关于爱的故事。  还记得小王子身边分分钟逗我笑的丁满和彭彭，还记得小......<span>(全文)</span>
+						</div>
+					</div>
+				</div>
+				<div class="reviews-container">
+					<a class="pic" href="#"><img src="images/20.jpg"></a>
+					<div class="reviews-info">
+						<h3><a href="">是善有善报？是屌丝逆袭？</a></h3>
+						<div class="reviews-meta">
+							<a href="#">千两道化</a>评论<a href="#">《美丽新世界》</a><span class="star star1"></span>
+						</div>
+						<div class="reviews-content">
+    讲道理什么的人们最不想听了，也许把世界翻转过来，理解就成为可能，或者兵棋推演，让你看看真正美丽的新世界不在别处，就是当下。  一共四个小故事，我目前只看了前三个。分别是：女权世界、老年人计划死亡、以胖为美。  女权......<span>(全文)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-5" id="aside">
+			<div class="rating-answer">
+				<li><a href="#">豆瓣电影评分八问</a></li>	
+			</div>
+			<div class="cinemas-search">
+				<div class="city">
+					<select>
+					  <option value ="北京">北京</option>
+					</select>		
+				</div>
+				<div class="cinemas-input"><input  type="text" name="" placeholder="搜索本地影院"></div>
+			</div>
+			<!-- <div class="ad">
+				<a href="#"><img src="images/ad.jpg"></a>
+			</div> -->
+			<div class="hot-link">
+				<h4>电影活动  · · · · · · </h4>
+				<ul>
+					<li><a href="#"> 快讯｜《黑处有什么》提档10月14日</a></li>
+					<li><a href="#">  投票丨9.30大撞片，你会去看哪一部？</a></li>
+					<li><a href="#">  资讯丨法鲨——阴影中的英雄</a></li>
+				</ul>
+			</div>
+			<div class="billboard">
+				<div class="billboard-hd"><h2>本周口碑排行 <span><a href="#">更多榜单»</a></span></h2></div>
+				<div class="billboard-bd">
+					<table>
+						<tbody>
+							<tr>
+								<td class="order">1</td>
+								<td class="title"><a href="#">瑞士军刀难男</a></td>
+							</tr>
+							<tr>
+								<td class="order">2</td>
+								<td class="title"><a href="#">幸运是我</a></td>
+							</tr>
+							<tr>
+								<td class="order">3</td>
+								<td class="title"><a href="#">最爽的一天</a></td>
+							</tr>
+							<tr>
+								<td class="order">4</td>
+								<td class="title"><a href="#">隧道</a></td>
+							</tr>
+							<tr>
+								<td class="order">5</td>
+								<td class="title"><a href="#">恋人们</a></td>
+							</tr>
+							<tr>
+								<td class="order">6</td>
+								<td class="title"><a href="#">樱桃小丸子：来自意大利的少年</a></td>
+							</tr>
+							<tr>
+								<td class="order">7</td>
+								<td class="title"><a href="#">德惠翁主</a></td>
+							</tr>
+							<tr>
+								<td class="order">8</td>
+								<td class="title"><a href="#">咖啡公社</a></td>
+							</tr>
+							<tr>
+								<td class="order">9</td>
+								<td class="title"><a href="#">老妈操碎心</a></td>
+							</tr>
+							<tr>
+								<td class="order">10</td>
+								<td class="title"><a href="#">瑞士军刀难男</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="contact-hd"><h2>合作联系</h2></div>
+				<div class="contact-bd">
+					<ul>
+						<li><a href="#">申请开通影片小站</a></li>
+						<li><a href="#">申请开通电影院小站</a></li>
+						<li>咨询通兑券合作及购买</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer of start -->
+	<div id="footer">
+		<span class="footer-copyright">
+			  © 2005－2016 douban.com, all rights reserved</span> 
+		<span class="item-footer">
+			<a href="#">关于豆瓣</a>
+			<a href="#">在豆瓣工作</a>
+			<a href="#">联系我们</a>
+			<a href="#">免责声明</a>
+			<a href="#">帮助中心</a>
+			<a href="#">移动应用</a>
+			<a href="#">豆瓣广告</a>
+		</span>
+		<!-- <div class="item-footer"></div> -->
+	</div>
+	<!-- footer of end -->
+</body>
+</html>
